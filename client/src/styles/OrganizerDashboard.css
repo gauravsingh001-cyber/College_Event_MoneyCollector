@@ -1,0 +1,210 @@
+.organizer-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.organizer-dashboard h1 {
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.create-event-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  border-top: 4px solid #667eea;
+}
+
+.create-event-section h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.create-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.create-form input,
+.create-form textarea,
+.create-form select {
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f8f9ff;
+}
+
+.create-form input::placeholder,
+.create-form textarea::placeholder {
+  color: #999;
+}
+
+.create-form input:focus,
+.create-form textarea:focus,
+.create-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.create-form textarea {
+  grid-column: 1 / -1;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-form button {
+  grid-column: 1 / -1;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
+}
+
+.create-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(79, 172, 254, 0.4);
+}
+
+.events-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  border-top: 4px solid #f093fb;
+}
+
+.events-section h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.events-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.event-item {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  background-color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.event-item:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.event-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.participants-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #4facfe;
+}
+
+.participants-section h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.participants-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.participants-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.participants-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.participants-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.participants-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.participants-table tbody tr:hover {
+  background-color: #f5f7ff;
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  .create-form {
+    grid-template-columns: 1fr;
+  }
+
+  .create-form button {
+    grid-column: 1;
+  }
+
+  .participants-table {
+    font-size: 12px;
+  }
+
+  .participants-table th,
+  .participants-table td {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,121 @@
+.profile-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.profile-page h1 {
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.profile-form {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #667eea;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #333;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #f8f9ff;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+.form-group input:disabled {
+  background-color: #e8e8e8;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
+
+.profile-page button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.profile-page button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.profile-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.success-message {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  padding: 14px 16px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border-left: 4px solid #00f2fe;
+  box-shadow: 0 8px 16px rgba(79, 172, 254, 0.2);
+  animation: slideIn 0.3s ease-out;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-form {
+    padding: 25px;
+  }
+}

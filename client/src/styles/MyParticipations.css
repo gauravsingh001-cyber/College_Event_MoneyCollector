@@ -1,0 +1,119 @@
+.my-participations {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.my-participations h1 {
+  margin-bottom: 40px;
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.participations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.participation-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-top: 4px solid #667eea;
+}
+
+.participation-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(102, 126, 234, 0.3);
+}
+
+.participation-card h3 {
+  margin-bottom: 18px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.participation-card p {
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+.status-badges {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge.payment-pending {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.badge.payment-completed {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.badge.payment-failed {
+  background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);
+  color: white;
+}
+
+.badge.checkin-true {
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  color: white;
+}
+
+.badge.checkin-false {
+  background: linear-gradient(135deg, #ffa726 0%, #fb8c00 100%);
+  color: white;
+}
+
+.qr-code {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px dashed #eee;
+}
+
+.qr-code img {
+  max-width: 200px;
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+  transition: all 0.3s ease;
+}
+
+.qr-code img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .participations-grid {
+    grid-template-columns: 1fr;
+  }
+}

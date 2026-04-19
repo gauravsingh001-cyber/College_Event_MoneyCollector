@@ -1,0 +1,16 @@
+{
+  "name": "College Event Organizer",
+  "short_name": "Event Organizer",
+  "description": "A platform for managing college events and payments",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1976d2",
+  "icons": [
+    {
+      "src": "/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
